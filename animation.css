@@ -1,0 +1,82 @@
+div {
+  background-color: rgb(219, 205, 191);
+  /*border-top: 4px solid brown;
+  border-bottom: 5px dotted rgb(208, 205, 235);
+  border-right: 5px solid rgb(212, 147, 147);*/
+  padding: 15px;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  left: 10px;
+  animation: changebc 5s linear 3s infinite;
+}
+
+@keyframes changebc {
+  from {
+    border-top: 4px solid rgb(127, 222, 172);
+    border-bottom: 5px dotted rgb(126, 223, 178);
+    border-right: 5px solid rgb(94, 222, 149);
+    width: 200px;
+    left: 10px;
+  }
+  to {
+    border-top: 4px solid rgb(46, 130, 4);
+    border-bottom: 5px dotted rgb(13, 136, 89);
+    border-right: 5px solid rgb(42, 97, 66);
+    width: 40px;
+    left: 50px;
+  }
+  /*0% {
+    background-color: peru;
+    top: 0;
+    left: 0;
+  }
+  30% {
+    background-color: purple;
+    top: 0;
+    left: 100px;
+  }
+  60% {
+    background-color: rgb(163, 223, 25);
+    top: 100px;
+    left: 100px;
+  }
+  90% {
+    background-color: rgb(143, 6, 13);
+    top: 0;
+    left: 0;
+  }
+  100% {
+    background-color: rgb(32, 35, 218);
+  }*/
+}
+
+.container {
+  background-color: rgb(169, 107, 227);
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  left: 0%;
+  right: 0%;
+  display: block;
+  animation: divanimate 4s linear 1s infinite;
+}
+@keyframes divanimate {
+  from {
+    background-color: rgb(169, 107, 227);
+    width: 300px;
+    top: 10px;
+  }
+  to {
+    background-color: rgb(69, 6, 128);
+    width: 50px;
+    top: 100px;
+  }
+}
